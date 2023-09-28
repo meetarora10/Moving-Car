@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.build{
+    background: url('building.jpg') center;
+    background-repeat: repeat-x;
+    width: 520vw;
+    height: 100vh;
+    position: absolute;
+    animation: back 13s linear infinite ;
+    
+}
+.road{
+    width: 520vw;
+    height: 50vh;
+    background: url('road2.jpg') center;
+    background-repeat: repeat-x;
+    position: absolute;
+    top:397px;
+    animation: road 5s linear infinite ;
+
+}
+.car{
+    width: 14vw;
+    height: 12vh;
+    position: absolute;
+    top:436px;
+    left: 318px;
+    background: url('car3.jpg')no-repeat center center/cover;
+    animation: car 1.7s infinite;
+    
+}
+
+.tyre1 img{
+    height: 6vh;
+    position: absolute;
+    left: 440px;
+    bottom: 89px;
+    width: 37px;
+    animation: tyre 1s infinite ;
+}
+.tyre2 img{
+    height: 6vh;
+    position: absolute;
+    left: 329px;
+    bottom: 89px;
+    width: 35px;
+    animation: tyre 1s infinite ;
+}
+@keyframes road {
+    100%{
+        transform: translateX(-1200px);
+    }  
+}
+@keyframes back {
+    100%{
+        transform: translateX(-900px);
+    }
+    
+}
+@keyframes tyre {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes car {
+    0%{
+        transform: translateY(3px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+    
+}
